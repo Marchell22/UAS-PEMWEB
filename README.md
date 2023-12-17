@@ -1,31 +1,37 @@
 Bagian 1: Client-side Programming (Bobot: 30%)
+
 1.1 (15%) Buatlah sebuah halaman web sederhana yang memanfaatkan JavaScript untuk melakukan manipulasi DOM.
 
 Panduan:
 - Buat form input dengan minimal 4 elemen input (teks, checkbox, radio, dll.)
 - Menampilkan data dari server kedalam sebuah halaman menggunakan tag `table`
+
 1.2 (15%) Buatlah beberapa event untuk menghandle interaksi pada halaman web
 
 Panduan:
 - Tambahkan minimal 3 event yang berbeda untuk menghandle form pada 1.1
 - Implementasikan JavaScript untuk validasi setiap input sebelum diproses oleh PHP
 Bagian 2: Server-side Programming (Bobot: 30%)
+
 2.1 (20%) Implementasikan script PHP untuk mengelola data dari formulir pada Bagian 1 menggunakan variabel global seperti `$_POST` atau `$_GET`. Tampilkan hasil pengolahan data ke layar.
 
 Panduan:
 - Gunakan metode POST atau GET pada formulir.
 - Parsing data dari variabel global dan lakukan validasi disisi server
 - Simpan ke basisdata termasuk jenis browser dan alamat IP pengguna
+
 2.2 (10%) Buatlah sebuah objek PHP berbasis OOP yang memiliki minimal dua metode dan gunakan objek tersebut dalam skenario tertentu pada halaman web Anda.
 
 Panduan:
 - Objek yang dibuat harus terkait dengan konteks pengembangan web saat ini.
 
 Bagian 3: Database Management (Bobot: 20%)
+
 3.1 (5%) Buatlah sebuah tabel pada database MySQL
 
 Panduan:
 - Lampirkan langkah-langkah dalam membuat basisdata dengan syntax basisdata
+
 
 3.2 (5%) Buatlah konfigurasi koneksi ke database MySQL pada file PHP. Pastikan koneksi berhasil dan dapat diakses.
 
