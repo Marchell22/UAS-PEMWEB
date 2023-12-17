@@ -45,7 +45,7 @@ Panduan:
 - Lampirkan langkah-langkah dalam membuat basisdata dengan syntax basisdata
 Menjalankan database pada phpmyadmin dengan menjalankan software xampp. Kemudian pada localhost:8080/phpmyadmin kita menjalankan database dengan membuat sebuah database dengan bernama "uaspemweb". Kemudain membuat stuktur tabel
 Struktur dari tabel `data`
---
+
 
 CREATE TABLE `data` (
   `id` int(100) NOT NULL,
@@ -60,30 +60,16 @@ CREATE TABLE `data` (
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `data`
---
+
+
 
 INSERT INTO `data` (`id`, `name`, `nim`, `gender`, `date`, `address`, `email`, `browser`, `ip_address`, `timestamp`) VALUES
 (7, 'Chell', '120', 'Perempuan', '2023-12-25', 'Porsea', 'ramotmanurung424@gmail.com', 'Google Chrome', '127.0.0.1', '2023-12-16 16:31:24');
 
---
--- Indexes for dumped tables
---
 
---
--- Indeks untuk tabel `data`
---
 ALTER TABLE `data`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT untuk tabel yang dibuang
---
-
---
--- AUTO_INCREMENT untuk tabel `data`
---
 ALTER TABLE `data`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
@@ -208,12 +194,15 @@ Bagian bonus ini akan memberikan bobot tambahan 20% jika Anda berhasil meng-host
 
 (5%) Apa langkah-langkah yang Anda lakukan untuk meng-host aplikasi web Anda?
 Langkah pertama yaitu login kepada website dari infinityfree kemudian lanjut ke tahap Create Account. Selanjutnya masuk ke dalam bagian Hosting Plan untuk memilih jenis hosting yang digunakan kemudian menentukan sub domain yang digunakan, kemudian melakukan additional information selanjutnya masuk ke dalam cpanel untuk mengupload file dari web. Ketika di cpanel kita masuk ke dalam online file manager dan masuk ke dalam folder htdocs dan mengupload file web. Kemudian masuk lagi ke dalam cpanel lalu masuk ke dalam MySQL Database untuk mendapatkan host username dan nama database dari infinityfree, kemudian kita memasukkan struktur tabel pada database cpanel.
+
 (5%) Pilih penyedia hosting web yang menurut Anda paling cocok untuk aplikasi web Anda. Berikan alasan Anda.
  InfinityFree menawarkan layanan hosting gratis. Ini bisa menjadi pilihan yang baik untuk mereka yang memiliki anggaran terbatas atau yang baru memulai dan ingin mencoba hosting tanpa biaya.
+
 (5%) Bagaimana Anda memastikan keamanan aplikasi web yang Anda host?
 Ketersediaan pembaruan keamanan mungkin tidak secepat pada layanan hosting berbayar. Ini dapat meningkatkan risiko terhadap eksploitasi kerentanan keamanan yang telah diperbaiki dalam pembaruan.
+
 (5%) Jelaskan konfigurasi server yang Anda terapkan untuk mendukung aplikasi web Anda.
 detail konfigurasi server pada penyedia hosting gratis seperti InfinityFree mungkin terbatas atau tidak sepenuhnya diungkapkan kepada pengguna karena sifat shared hosting dan pengelolaan penuh server oleh penyedia hosting.
-*InfinityFree menggunakan model shared hosting, yang berarti beberapa situs web dihosting pada satu server fisik. Ini membatasi kontrol penuh atas konfigurasi server untuk setiap pengguna.
+* InfinityFree menggunakan model shared hosting, yang berarti beberapa situs web dihosting pada satu server fisik. Ini membatasi kontrol penuh atas konfigurasi server untuk setiap pengguna.
 *InfinityFree umumnya menyediakan server web Apache, yang dapat dikonfigurasi untuk mendukung berbagai bahasa pemrograman dan kerangka kerja seperti PHP.
 *InfinityFree biasanya mendukung server database MySQL untuk menyimpan dan mengelola data aplikasi web.
